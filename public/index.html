@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <!-- character encoding to use for the HTML document -->
+        <meta charset="utf-8">
+
+        <!-- Title that will be displayed in the search engine and the browser tab -->
+        <title>React Clone</title>
+
+        <!-- ECMAScript Modules to preload for performance purposes -->
+        <link rel="modulepreload" href="/notification.js">
+        <link rel="modulepreload" href="/react-dom.js">
+        <link rel="modulepreload" href="/react-router-dom.js">
+        <link rel="modulepreload" href="/react.js">
+        <link rel="modulepreload" href="/materialize.js">
+        <link rel="modulepreload" href="/extra/string.js">
+        <link rel="modulepreload" href="/type.js">
+
+        <!-- HTTP requests to preload for performance purposes -->
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" as="style">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" as="script">
+
+        <!-- Web Manifest to use for the Progressive Web Application -->
+        <link rel="manifest" href="/manifest.webmanifest">
+
+        <!-- Because they have to always do something different than the others and justify the price of their services -->
+        <link rel="apple-touch-icon" href="/images/icon.png">
+
+        <!-- Icon to use for search engine and the browser tab -->
+        <link rel="favicon" href="/favicon.ico">
+
+        <!-- Color theme to use for some mobile browser -->
+        <meta name="theme-color" content="white">
+
+        <!-- Fix mobile device window aspect ratio of the page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Description of the application used by search engines -->
+        <meta name="description" content="React Clone — ESGI">
+
+        <!-- ECMAScript Module Entry point of the application loaded asynchronously to prevent blocking the initial rendering -->
+        <script src="index.js" type="module" async></script>
+    </head>
+    <body>
+        <!-- This is where all the application gets rendered -->
+        <div id="app"></div>
+        
+        <!-- Fallback markup in case the user has disabled script execution -->
+        <noscript>
+            <header>
+                <h1>JavaScript désactivé</h1>
+            </header>
+            <main>
+                <p>Il semblerait que l'exécution des scripts soit désactivé sur cet appareil. Merci d'activer JavaScript afin de profiter pleinement de cette application.</p>
+            </main>
+        </noscript>
+    </body>
+</html>

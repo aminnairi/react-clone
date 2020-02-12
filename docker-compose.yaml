@@ -1,0 +1,19 @@
+# Version the Docker Compose API to use
+version: "3"
+
+# List of Docker Compose services
+services:
+    # Web Server service
+    server:
+        # Image to use
+        image: nginx:latest
+        # Ports exposed to the world
+        ports:
+            # Opening the HTTP port directly (can conflict with Skype)
+            - 80:80
+        # Files/folders to map to the container
+        volumes:
+            # Mapping the local public folder to the usual NGINX HTTP folder
+            - ./public:/usr/share/nginx/html
+            # Mapping the NGINX configuration to allow editing the configuration from the local filesystem
+            - ./nginx.conf:/etc/nginx/nginx.conf
